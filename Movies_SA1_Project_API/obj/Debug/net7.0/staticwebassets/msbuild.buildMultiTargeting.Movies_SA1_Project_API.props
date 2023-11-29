@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Movies_SA1_Project_API.props" />
+</Project>

@@ -1,0 +1,71 @@
+{
+  "Version": 1,
+  "Hash": "jXlnfVjRk/fNzGv+FuNXVo9lD1mzotT13VySPVYzV0U=",
+  "Source": "Movies_SA1_Project_API",
+  "BasePath": "_content/Movies_SA1_Project_API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "Movies_SA1_Project_API\\wwwroot",
+      "Source": "Movies_SA1_Project_API",
+      "ContentRoot": "D:\\Movies_SA1_Project_API\\Movies_SA1_Project_API\\wwwroot\\",
+      "BasePath": "_content/Movies_SA1_Project_API",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "D:\\Movies_SA1_Project_API\\Movies_SA1_Project_API\\wwwroot\\uploads\\7663aeb5-b3b6-489b-bc68-3a8fa20f801c_Screenshot 2023-03-13 220717.png",
+      "SourceId": "Movies_SA1_Project_API",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Movies_SA1_Project_API\\Movies_SA1_Project_API\\wwwroot\\",
+      "BasePath": "_content/Movies_SA1_Project_API",
+      "RelativePath": "uploads/7663aeb5-b3b6-489b-bc68-3a8fa20f801c_Screenshot 2023-03-13 220717.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\7663aeb5-b3b6-489b-bc68-3a8fa20f801c_Screenshot 2023-03-13 220717.png"
+    },
+    {
+      "Identity": "D:\\Movies_SA1_Project_API\\Movies_SA1_Project_API\\wwwroot\\uploads\\8f646630-4bc6-41b3-abf7-fbd99f0f4477_Screenshot 2023-03-13 204609.png",
+      "SourceId": "Movies_SA1_Project_API",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Movies_SA1_Project_API\\Movies_SA1_Project_API\\wwwroot\\",
+      "BasePath": "_content/Movies_SA1_Project_API",
+      "RelativePath": "uploads/8f646630-4bc6-41b3-abf7-fbd99f0f4477_Screenshot 2023-03-13 204609.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\8f646630-4bc6-41b3-abf7-fbd99f0f4477_Screenshot 2023-03-13 204609.png"
+    },
+    {
+      "Identity": "D:\\Movies_SA1_Project_API\\Movies_SA1_Project_API\\wwwroot\\uploads\\cd13e60f-89c7-434a-b8a7-1dd896ae99c6_Screenshot 2023-03-13 220717.png",
+      "SourceId": "Movies_SA1_Project_API",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Movies_SA1_Project_API\\Movies_SA1_Project_API\\wwwroot\\",
+      "BasePath": "_content/Movies_SA1_Project_API",
+      "RelativePath": "uploads/cd13e60f-89c7-434a-b8a7-1dd896ae99c6_Screenshot 2023-03-13 220717.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\cd13e60f-89c7-434a-b8a7-1dd896ae99c6_Screenshot 2023-03-13 220717.png"
+    }
+  ]
+}
