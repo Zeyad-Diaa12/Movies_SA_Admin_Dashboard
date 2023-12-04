@@ -2,6 +2,7 @@
 
 namespace Movies_SA1_Project_API.Models
 {
+    // User Table Structure in database
     public class User
     {
         public int ID { get; set; }

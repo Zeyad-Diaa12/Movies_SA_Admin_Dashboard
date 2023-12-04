@@ -3,6 +3,7 @@ using Movies_SA1_Project_API.Models;
 
 namespace Movies_SA1_Project_API.Services
 {
+    // Movie Interface (Main Functions)
     public interface IMovieService
     {
         Task<bool> AddMovie(MovieDto movie);

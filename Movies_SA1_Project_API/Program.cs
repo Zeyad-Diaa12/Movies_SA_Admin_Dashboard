@@ -3,9 +3,14 @@ using Movies_SA1_Project_API.Data;
 using Movies_SA1_Project_API.Implementations;
 using Movies_SA1_Project_API.Services;
 
+
+// Create a new web application builder.
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
+
+// Configure the services to be added to the dependency injection container.
+
+// Connection to interact with database.
 builder.Services.AddDbContext<DataContext>(
     options =>
     {
@@ -13,11 +18,14 @@ builder.Services.AddDbContext<DataContext>(
     }
     );
 
+// Add services for user, movie, and review operations.
 builder.Services.AddScoped<IUserService, UserService>();
 builder.Services.AddScoped<IMovieService, MovieService>();
 builder.Services.AddScoped<IReviewService, ReviewService>();
 
 
+
+// Configure Cross-Origin Resource Sharing (CORS) policies.
 builder.Services.AddCors(
         options =>
         {
@@ -33,11 +41,13 @@ builder.Services.AddCors(
     );
 
 
+// Add controllers, Swagger documentation, and API explorer endpoints.
 builder.Services.AddControllers();
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+
+// Build the application.
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

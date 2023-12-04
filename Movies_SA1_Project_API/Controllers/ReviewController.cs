@@ -4,6 +4,7 @@ using Movies_SA1_Project_API.Services;
 
 namespace Movies_SA1_Project_API.Controllers
 {
+    // the main api endpoints for reviews
     [Route("api/[controller]")]
     [ApiController]
     public class ReviewController : ControllerBase
@@ -12,9 +13,12 @@ namespace Movies_SA1_Project_API.Controllers
 
         public ReviewController(IReviewService reviewService)
         {
+            // initalize object from the review service to deal with incoming data
             _reviewService = reviewService;
         }
 
+
+        // add review endpoint
         [HttpPost("add-review")]
         public async Task<IActionResult> AddReview([FromForm]ReviewDto newRev)
         {
@@ -29,6 +33,8 @@ namespace Movies_SA1_Project_API.Controllers
         }
 
 
+
+        // get reviews endpoint
         [HttpGet("get-reviews")]
         public async Task<IActionResult> GetAllReviews()
         {

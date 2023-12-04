@@ -6,14 +6,18 @@ using Movies_SA1_Project_API.Services;
 
 namespace Movies_SA1_Project_API.Implementations
 {
+    // The implementation of the Movie interface
     public class MovieService : IMovieService
     {
         private readonly DataContext _context;
         private readonly IWebHostEnvironment _webHostEnvironment;
 
+
         public MovieService(DataContext context, IWebHostEnvironment webHostEnvironment)
         {
+            // Initailize the object to deal with the User database
             _context = context;
+            // object to deal with the files of the website
             _webHostEnvironment = webHostEnvironment;
         }
 
@@ -21,14 +25,20 @@ namespace Movies_SA1_Project_API.Implementations
         {
             try
             {
+                // Make a name for the cover photo of the movie
                 var uniqueFileName = Guid.NewGuid().ToString() + "_" + movieDto.CoverPhoto.FileName;
 
+                // Define the full path
                 var filePath = Path.Combine(_webHostEnvironment.WebRootPath, "uploads", uniqueFileName);
 
+
+                // add the file to the full path
                 using (var stream = new FileStream(filePath, FileMode.Create))
                 {
                     await movieDto.CoverPhoto.CopyToAsync(stream);
                 }
+
+                // change form movieDto to movie 
 
                 var movie = new Movie
                 {
@@ -43,6 +53,8 @@ namespace Movies_SA1_Project_API.Implementations
                     Rating = movieDto.Rating
                 };
 
+
+                // add movie to database
                 _context.Movies.Add(movie);
                 await _context.SaveChangesAsync();
 
@@ -58,17 +70,21 @@ namespace Movies_SA1_Project_API.Implementations
         {
             try
             {
+                // get the movie from the database using id
                 var movie = await _context.Movies.FindAsync(movieID);
 
                 if (movie == null)
                     return false;
 
+                // delete the photo from the uploads files
                 var fullPath = Path.Combine(_webHostEnvironment.WebRootPath, movie.CoverPhoto.TrimStart('\\', '/'));
 
                 if (File.Exists(fullPath))
                 {
                     File.Delete(fullPath);
                 }
+
+                // delete the movie from the database
 
                 _context.Movies.Remove(movie);
                 await _context.SaveChangesAsync();

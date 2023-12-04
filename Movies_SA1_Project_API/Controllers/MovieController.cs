@@ -5,6 +5,8 @@ using Movies_SA1_Project_API.Services;
 
 namespace Movies_SA1_Project_API.Controllers
 {
+
+    // the main api endpoints for movies
     [Route("api/[controller]")]
     [ApiController]
     public class MovieController : ControllerBase
@@ -13,9 +15,12 @@ namespace Movies_SA1_Project_API.Controllers
 
         public MovieController(IMovieService movieService)
         {
+            // initalize object from the user service to deal with incoming data
             _movieService = movieService;
         }
 
+
+        // add movie endpoint
 
         [HttpPost]
         public async Task<IActionResult> AddMovie([FromForm]MovieDto newMovie)
@@ -30,6 +35,8 @@ namespace Movies_SA1_Project_API.Controllers
             return BadRequest("Something Went Wrong");
         }
 
+
+        // get movie by search endpoint
         [HttpGet("get-movie/{searchWord}")]
         public async Task<IActionResult> GetMovie(string searchWord)
         {
@@ -41,6 +48,8 @@ namespace Movies_SA1_Project_API.Controllers
             return Ok("Movie Not Found");
         }
 
+
+        // delete movie using id
         [HttpDelete("delete-movie/{id}")]
         public async Task<IActionResult> DeleteMovie(int id)
         {
@@ -54,6 +63,8 @@ namespace Movies_SA1_Project_API.Controllers
             return BadRequest("Couldn't delete the movie");
         }
 
+
+        // get all movies
         [HttpGet("get-all-movies")]
         public async Task<IActionResult> GetAllMovies()
         {

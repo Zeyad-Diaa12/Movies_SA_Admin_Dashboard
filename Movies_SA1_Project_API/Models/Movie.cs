@@ -1,6 +1,7 @@
 ﻿
 namespace Movies_SA1_Project_API.Models
 {
+    // Movie Table Structure in database
     public class Movie
     {
         public int ID { get; set; }

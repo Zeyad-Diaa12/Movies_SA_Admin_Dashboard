@@ -2,6 +2,7 @@
 
 namespace Movies_SA1_Project_API.DTOs
 {
+    // DTO (Data Transfer Object) for review
     public class ReviewDto
     {
         public string ReviewType { get; set; }

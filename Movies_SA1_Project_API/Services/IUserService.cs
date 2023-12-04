@@ -2,6 +2,7 @@
 
 namespace Movies_SA1_Project_API.Services
 {
+    // User Interface (Main Functions)
     public interface IUserService
     {
         Task<string> Register(UserRegisterDto newUser);

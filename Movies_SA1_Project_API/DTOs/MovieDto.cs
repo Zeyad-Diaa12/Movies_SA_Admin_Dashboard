@@ -1,5 +1,6 @@
 ﻿namespace Movies_SA1_Project_API.DTOs
 {
+    // DTO (Data Transfer Object) for movie
     public class MovieDto
     {
         public string Title { get; set; }
