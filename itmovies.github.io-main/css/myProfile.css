@@ -1,0 +1,173 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: capitalize;
+}
+
+:root {
+    --bgcColor: #09031b;
+    --boxColor: #1a0f38;
+    --primaryColor: #745cfd;
+    --boxHover: rgba(116, 113, 255, 0.5);
+    --playColor: #ffb451;
+    --rattingColor: #ffdf2c;
+    --rattingGreen: #75ffb5;
+    --rattingRed: #ff7575;
+    --rattingBlue: #4335ff;
+    --font-color: #e9e9e9;
+}
+
+body {
+    background-color: var(--bgcColor);
+}
+
+
+header {
+    margin: 2px 40px 30px;
+    border-bottom: 0.1px solid #b0b0b0;
+    padding: 25px;
+    color: var(--font-color);
+}
+
+
+a {
+    font-size: 40px;
+    text-decoration: none;
+    float: right;
+    margin-top: -30px;
+    position: top;
+
+}
+
+
+table {
+    width: 75%;
+    height: 68%;
+    float: right;
+    border-left: 1px solid #b0b0b0;
+    padding-right: 100px;
+    padding-left: 70px;
+    color: var(--font-color);
+    font-size: x-large;
+
+}
+
+th {
+    text-align: center;
+}
+
+td {
+    text-align: left;
+    border-bottom: 1px solid gray;
+    border-left-color: solid black;
+    margin: 0%;
+    padding: 0%;
+
+}
+
+tr:hover {
+    background-color: var(--boxColor);
+
+}
+
+footer {
+    margin-top: 0%;
+    font-size: large;
+    margin-left: 29%;
+    padding-top: 70px;
+    padding-right: 18px;
+    color: var(--font-color);
+}
+
+#lang-of-page {
+    margin-left: 81%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+#name {
+    padding: 10px 550px 10px 10px;
+    margin-left: 13%;
+    font-size: 15px;
+}
+
+#mail {
+    padding: 10px 550px 10px 10px;
+    margin-left: 12%;
+    font-size: 15px;
+    text-align: left;
+    text-transform: lowercase;
+}
+
+#phone {
+    padding: 10px 550px 10px 10px;
+    margin-left: 1.7%;
+    font-size: 15px;
+    text-align: left;
+}
+
+#username {
+    padding: 10px 547px 10px 10px;
+    margin-left: 7.5%;
+    font-size: 15px;
+}
+
+#birth {
+    padding: 10px 607px 10px 10px;
+    margin-left: 9.5%;
+    font-size: 15px;
+}
+
+#Male {
+    padding: 10px 0px;
+    margin-left: 110px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+#female {
+    padding: 10px 0px;
+    margin-left: 20px;
+}
+
+.count {
+    padding: 10px 550px 10px 10px;
+    text-align: left;
+    margin-left: 9.4%;
+    font-size: 15px;
+}
+
+#save {
+    padding: 10px 25px;
+    margin-left: 14.5%;
+    font-size: 20px;
+}
+
+#reset {
+    padding: 10px 25px;
+    margin-left: 5%;
+    font-size: 20px;
+}
+
+nav {
+    padding: 100px 45px 0px;
+    margin-top: 18.5%;
+    max-width: 1240px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#log {
+    padding: 15px 115px;
+    margin-bottom: 2%;
+    font-style: inherit;
+}
+
+#sign {
+    padding: 15px 115px;
+    margin-top: 35px;
+    margin-right: 45px;
+}

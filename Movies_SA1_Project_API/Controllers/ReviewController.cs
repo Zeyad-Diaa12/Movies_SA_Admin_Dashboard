@@ -16,7 +16,7 @@ namespace Movies_SA1_Project_API.Controllers
         }
 
         [HttpPost("add-review")]
-        public async Task<IActionResult> AddReview([FromBody] ReviewDto newRev)
+        public async Task<IActionResult> AddReview([FromForm]ReviewDto newRev)
         {
             var rev = await _reviewService.AddReview(newRev);
 

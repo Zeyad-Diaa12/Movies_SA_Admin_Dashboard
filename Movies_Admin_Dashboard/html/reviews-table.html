@@ -151,7 +151,6 @@
                       <th>Review For</th>
                       <th>Review Name</th>
                       <th>Review</th>
-                      <th>Reviewer Name</th>
                       <th>Rating</th>
                       <!-- <th>Delete</th> -->
                     </tr>
@@ -212,8 +211,7 @@
         var revForCell = newRow.insertCell(1);
         var revNameCell = newRow.insertCell(2);
         var revCell = newRow.insertCell(3);
-        var revName = newRow.insertCell(4);
-        var rating = newRow.insertCell(5);
+        var rating = newRow.insertCell(4);
         // var deleteCell = newRow.insertCell(6);
 
        
@@ -221,7 +219,6 @@
         revForCell.textContent = record.reviewType;
         revNameCell.innerHTML = record.reviewName;
         revCell.innerHTML = record.description;
-        revName.innerHTML = record.name;
         rating.innerHTML = record.rating;
 
         // deleteCell.innerHTML = `<button style="text-decoration: none; font-size: large;" type="button" class="btn rounded-pill btn-outline-danger" onclick="javascript:deletePartner('${record.id}')">Delete</button>`;

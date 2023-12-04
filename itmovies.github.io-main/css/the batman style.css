@@ -1,0 +1,267 @@
+﻿div{
+    border: 1px solid white;
+    display: block;
+    border-style: none;
+}
+
+a{
+  text-decoration: none;
+}
+ li{
+   list-style: none;
+ }
+body{
+    background-color: #1a0f38;
+    font-family: Verdana;
+    max-width:1300px;
+    word-break: keep-all;
+    color: #e5e5e5;
+    font-size: 16px;
+    line-height: 24px;
+    max-width: 100%;
+}
+
+:root{
+    --bgcColor:#09031b;
+    --boxColor:#1a0f38;
+    --primaryColor:#745cfd;
+    --boxHover:rgba(116, 113, 255,0.5);
+    --playColor:#ffb451;
+    --rattingColor:#ffdf2c;
+    --rattingGreen:#75ffb5;
+    --rattingRed:#ff7575;
+    --rattingBlue:#4335ff;
+    --font-color:#e9e9e9;
+    --fontSizeXl:48px;
+    --fontSubSize:12px;
+    --fontSizeLarge:28px;
+    --marginTop:20px;
+    --paddingPrimary:12px 20px;
+    --pdPrimaryButton:8px 16px;
+    --pdBigButton:10px 24px;
+}
+/* scrollbar thumb tranck */
+::-webkit-scrollbar{
+    width: 10px;
+    background-color: var(--font-color);
+    border-radius:4px;
+  }
+  ::-webkit-scrollbar-track{
+    box-shadow: inset 2px 2px 4px rgb(80, 80, 80);
+  }
+  ::-webkit-scrollbar-thumb{
+    background-color: var(--primaryColor);
+    border-radius: 4px;
+  }
+  /* header */
+  header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 200000;
+    padding: 20px 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  /* navbar */
+  nav{
+    max-width: 1240px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  nav .brand{
+    display: flex;
+    color: var(--font-color);
+    align-items: center;
+  }
+  nav .brand a{
+    color: var(--primaryColor);
+    font-size: 20px;
+    font-weight: 800;
+  }
+  nav .brand .nav-toggle{
+    display: none;
+  }
+  nav ul{
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  nav ul li {
+    margin-right: 12px;
+  }
+  nav ul li a{
+    color: var(--font-color);
+    padding: 10px 16px;
+    letter-spacing: 1px;
+    border-radius: 10px;
+    position: relative;
+    font-weight: 600;
+    transition: all .3s ease;
+  }
+  nav ul li a:hover{
+    background-color: var(--primaryColor);
+    
+  }
+  nav ul li a:hover:after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--primaryColor);
+    filter: blur(6px);
+    z-index: -1;
+    transition: all .3s ease;
+    transition-delay: .2s;
+  }
+  nav .user{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  nav .user img{
+    max-width: 100%;
+    object-fit: contain;
+  }
+  /* navbar -ended */
+  
+
+
+
+
+
+
+
+
+
+
+
+div.all{
+  margin-top:130px;
+}
+
+
+h1{
+    color: #745cfd;
+    font-size: 44px;
+    font-weight: 600;
+}
+
+div.info{
+    display: flex;
+}
+
+div.movie{
+    padding-left: 60px;
+    margin-bottom: 30px;
+}
+
+video{
+    width: 800px;
+    height: 500px;
+}
+
+img.poster{
+    width: 500px;
+    height: 300px;
+    border: 0px;
+    border-radius: 8px;
+    object-fit: fill;
+}
+
+
+div.info1{
+    max-width: 650px;
+    padding-top: 30px;
+    padding-left: 10px;
+}
+
+div.info1 li{
+    display: block;
+}
+div.about{
+    max-width: 950px;
+    padding-left: 60px;
+    margin-bottom: 30px;
+}
+
+div.trailer{
+    text-align: center;
+}
+
+
+div.season{
+    display: block;
+    text-align: left;
+    font-size: 20px;
+    font-weight: 600;
+    padding-left: 50px;
+}
+ div.season a{color: aliceblue;}
+div.season a:hover{
+    color:#745cfd;
+
+}
+
+footer a{
+    color:#745cfd;
+}
+
+div.ftr{
+    border-top: 4px solid #745cfd;
+    background-color: rgb(0,0,0,0,);
+    padding-left : 20px;
+    font-size: 12px;
+    display: block;
+    height: 60px;
+    padding-top: 20px;
+    margin: 0px 0px ;
+    margin-top: 20px;
+ }
+
+
+span{
+    color:#745cfd ;
+}
+ 
+
+     
+
+ div.social,.copyright,.ftr-logo{
+     display: inline-block;
+     width: 30%;
+    height: 100%;
+    text-align: center;
+ }
+
+ .ftr-logo a{
+    font-size: 20px;
+    font-weight: 600px;
+ }
+ div.ftr div.social a{
+  font-size: 28px;
+  color:#e5e5e5;
+  margin:20px;
+ }
+ div.ftr div.social a :hover{
+  color:#ffb451;
+  
+ }
+
+
+
+
+
+ 
+
+
+
+
+
+

@@ -1,0 +1,120 @@
+﻿<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>log in</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/log in style.css">
+  <link rel="stylesheet" href="icofont/icofont.min.css">
+</head>
+
+<body>
+  <div class="body">
+    <a class="home" href="index.html">
+      home page
+    </a>
+    <div class="login">
+      <p class="p1">
+        log in
+      </p>
+    </div>
+
+
+    <div class="all">
+      <p class="logo1">AI Team Movies</p>
+      <div class="liform">
+        <form>
+          <div class="s1">
+            <div class="s11">
+              <label for="user-name">user name:</label>
+            </div>
+            <div class="s12">
+              <input type="text" id="user-name" name="user-name">
+            </div>
+          </div>
+
+          <div class="s2">
+            <div class="s21">
+              <label for="password">password:</label>
+            </div>
+            <div class="s22">
+              <input type="password" id="password" name="password">
+            </div>
+          </div>
+          <div class="login-btn" id="login-btn">
+            <input type="button" value="Log In" onclick="loginUser()">
+          </div>
+
+        </form>
+
+
+        <div class="s5">
+          <p class="p4">not have an account?
+            <a href="signup.html">sign up now</a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class=ftr>
+      <footer>
+        <div class="ftr-logo">
+          <a class="logo">AI Team Movies</a>
+        </div>
+        <div class="dp5">
+          <p>Copyright &copy; 2022 <span class="logo2">AI Team Movies</span> All Rights Reserved</p>
+        </div>
+        <div>
+          <table>
+            <tr>
+              <td>
+                <div class="t1"><a href="signup.html">sign up</a></div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </footer>
+    </div>
+
+  </div>
+
+  <script>
+    <!-- Inside the script tag -->
+    function loginUser() {
+      const userName = document.getElementById('user-name').value;
+      const password = document.getElementById('password').value;
+
+      // Fetch API
+      fetch('https://localhost:7256/api/User/login', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          email: userName,
+          password: password,
+        }),
+      })
+        .then(response => response.json())
+        .then(data => {
+          // Store data in local storage
+          localStorage.setItem('userData', JSON.stringify(data));
+
+          // Notify user about successful login
+          alert('Login successful! Redirecting to the home page.');
+
+
+          // Redirect to another page or perform additional actions
+          window.location.href = 'index.html';
+        })
+        .catch(error => {
+          console.error('Error:', error);
+          // Notify user about login failure
+          alert('Login failed. Please check your credentials and try again.');
+        });
+    }
+
+  </script>
+</body>
+
+</html>

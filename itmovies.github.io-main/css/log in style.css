@@ -1,0 +1,214 @@
+﻿a {
+  text-decoration: none;
+  color: white;
+}
+
+
+body {
+  background-image: url("1209624.jpg");
+  background-color: #101040;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  object-fit:contain;
+  width: 100%;
+  font-size: 22px;
+  color: white;
+  font-family: verdana;
+  overflow: auto;
+}
+
+
+li {
+  display: inline;
+}
+
+
+div.login {
+  border: 1px solid white;
+  border-style: none;
+  display: block;
+  padding: 0px;
+  margin: 0px;
+  text-align: center;
+  text-align: center;
+}
+
+
+a.home {
+  font-size: 22px;
+  border: 0px;
+  background-color: red;
+  margin-right: 30px;
+  height: 40px;
+  border-radius: 15px;
+  padding: 10px 10px 0px 10px;
+  float: right;
+  margin-left: 30px;
+}
+
+p.p1 {
+  font-size: 50px;
+  font-weight: 800;
+}
+
+div.all {
+  border: 1px solid white;
+  display: flex;
+  border-style: none;
+}
+
+
+div.liform {
+  display: inline-block;
+  border: 0px solid white;
+  margin-left: 0px;
+  text-align: center;
+  width: 50%;
+  padding: 20px 0px;
+  border-radius: 12px;
+  background-color: rgba(11, 11, 11, 0.7);
+  margin-left: 0px;
+}
+
+p.logo1 {
+  font-size: 80px;
+  margin: 0px;
+  border: 2px solid white;
+  text-align: center;
+  width: 45%;
+  padding-top: 80px;
+  color: red;
+  font-weight: 600;
+  border-style: none;
+}
+
+div .s1,
+.s2,
+.s3 {
+  display: block;
+  border: 1px solid white;
+  padding: 0px;
+  border-style: none;
+}
+
+div.s11,
+.s12,
+.s21,
+.s22 {
+  display: inline-block;
+  border: 1px solid white;
+  border-style: none;
+  margin-right: 0%;
+  padding: 0px;
+  margin: auto;
+  width: 20%;
+}
+
+
+div.s12,
+.s22 {
+  width: 60%;
+
+}
+
+p.forgot a {
+  color: red;
+}
+
+p.forgot a:hover {
+  text-decoration: underline;
+}
+
+input[type=text] {
+  padding: 7px 7px;
+  box-sizing: border-box;
+  border: 1px solid white;
+  border-radius: 6px;
+  width: 80%;
+  margin-right: 100%;
+  font-size: 16px;
+  color: white;
+  background-color: rgba(1, 1, 1, 0.0);
+}
+
+input[type=text]:focus {
+  background-color: black;
+  font-size: 18px;
+  color: white;
+}
+
+input[type=password] {
+  padding: 7px 7px;
+  box-sizing: border-box;
+  border: 1px solid white;
+  border-radius: 6px;
+  width: 80%;
+  margin-right: 100%;
+  font-size: 16px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+
+input[type=password]:focus {
+  background-color: black;
+  font-size: 18px;
+  color: white;
+}
+
+
+input[type=button] {
+  padding: 7px 7px;
+  box-sizing: border-box;
+  border: 1px solid white;
+  border-radius: 8px;
+  width: 48%;
+  margin-left: 10%;
+  background-color: red;
+  filter: brightness(90%);
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+input[type=button]:hover {
+  filter: brightness(100%);
+  color: white;
+
+}
+
+div.s5 a {
+  color: red;
+}
+
+div.s5 a:hover {
+  text-decoration: underline;
+}
+
+div.ftr {
+  border-top: 3px solid red;
+  background-color: rgba(11, 11, 11, 0.5);
+  margin-top: 20px;
+  font-size: 12px;
+  padding-left: 20px;
+}
+
+div a.logo {
+  font-size: 28px;
+  color: red;
+  filter: brightness(80%);
+  font-weight: 800;
+}
+
+.logo:hover {
+  filter: brightness(100%);
+}
+
+span {
+  color: red;
+}
+
+div.t1 {
+  border-left: 2px solid red;
+  margin-right: 30px;
+  padding-left: 10px;
+}

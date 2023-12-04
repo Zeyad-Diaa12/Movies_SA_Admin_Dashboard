@@ -63,6 +63,13 @@ namespace Movies_SA1_Project_API.Implementations
                 if (movie == null)
                     return false;
 
+                var fullPath = Path.Combine(_webHostEnvironment.WebRootPath, movie.CoverPhoto.TrimStart('\\', '/'));
+
+                if (File.Exists(fullPath))
+                {
+                    File.Delete(fullPath);
+                }
+
                 _context.Movies.Remove(movie);
                 await _context.SaveChangesAsync();
 

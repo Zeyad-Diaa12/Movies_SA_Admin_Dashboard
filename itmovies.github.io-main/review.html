@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body {
+            background-color: #09031b;
+            padding: none;
+        }
+
+        h1,
+        h5,
+        form {
+            color: #e9e9e9;
+            font-family: 'Montserrat', sans-serif;
+            text-align: center;
+            border-bottom-style: solid;
+            border-color: #8e73de;
+            margin-bottom: 40px;
+            padding-bottom: 50px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #e9e9e9;
+        }
+
+        h2 {
+            margin-left: 2.5%;
+            color: #e9e9e9;
+            font-size: xx-large;
+        }
+
+        .checked {
+            color: orange;
+        }
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <h1>Leave your own review</h1>
+    <h2><a href="index.html">Home Page</a></h2>
+    <h5>what do you think of these projects</h5>
+    <form style="width:100%" method="post" action="https://localhost:7256/api/Review/add-review">
+        <label for="type">Type:</label>
+        <select name="reviewType" id="type">
+            <option value="Movie">Movie</option>
+            <option value="TV Show">TV Show</option>
+        </select>
+        <br>
+        <br>
+        <label for="revName">Name of the Movie/Show:</label>
+        <input type="text" name="reviewName" id="revName">
+
+        <input type="text" name="name" id="name" value="Junk" hidden>
+        
+        <br>
+        <br>
+        <label for="rev">Your Review:</label>
+        <input type="text" id="rev" name="description">
+        <br>
+        <br>
+        <label for="rating">Rating:</label>
+        <select name="rating" id="rating">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select>
+        <br>
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <script>
+
+    </script>
+</body>
+<html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+</html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>SignUp page </title>
+    <link rel="stylesheet" type="text/css" href="css\signup.css">
+</head>
+
+<body>
+    <header>
+        <h1 id="home">
+            <a href="index.html">Home Page </a>
+        </h1>
+    </header>
+    <form>
+        <h1>Create your account</h1>
+        <input type="text" placeholder="Enter Email" id="email" name="email" required>
+        <input type="password" placeholder="Enter Password" id="password" name="pswd1" required>
+        <input type="password" placeholder="Confirm Password" id="confirmPassword" name="pswd2" required>
+        <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+        <div class="clearfix">
+            <input id="signup-btn" type="button" class="signupbtn" onclick="signUp()" value="Sign Up">
+        </div>
+        <p>Already have an account? <a href="log in.html" style="color:dodgerblue">log in</a>.</p>
+    </form>
+
+    <script>
+        function signUp() {
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+            const confirmPassword = document.getElementById('confirmPassword').value;
+            if (email == "" || password == "" || confirmPassword == "") {
+                alert('Please Fill all the required fields');
+            }
+            else {
+
+                fetch('https://localhost:7256/api/User/register', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        email: email,
+                        password: password,
+                        confirmPassword: confirmPassword,
+                    }),
+                })
+                    .then(response => response.text())
+                    .then(data => {
+                        console.log(data);
+                        // Handle the response from the server
+                        if (data == "Registered Successfully") {
+                            alert('Signup successful!');
+                            window.location.href = 'log in.html';
+                        } else {
+                            alert('Signup failed. Please check your input.');
+                        }
+                    })
+                    .catch(error => {
+                        console.error('Error:', error);
+                        alert('An error occurred. Please try again.');
+                    });
+            }
+        }
+    </script>
+
+</body>

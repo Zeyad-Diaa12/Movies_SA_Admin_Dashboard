@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shor icon" href="media/hero/alraza.png">
+    <link rel="stylesheet" href="/package/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="icofont/icofont.min.css">
+    <link rel="stylesheet" href="css/movieDetail.css">
+    <title>The Adam Project</title>
+</head>
+
+<body onload="preloader()">
+    <div class="preloader">
+        <img src="media/loader/preloader.gif" alt="preloader">
+    </div>
+    <header>
+        <nav>
+            <div class="brand">
+                <a href="" class="brand-logo">AI Team Movies</a>
+                <div class="nav-toggle">
+                    <div class="toggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="movies.html">Movies</a></li>
+                <li><a href="policy.html">policy</a></li>
+                <li><a href="AboutUs.html">about us</a></li>
+                <li><a href="review.html">review</a></li>
+                <li><a href="log in.html" id="login-link">log in</a></li>
+                <li><a href="signup.html" id="signup-link">sign up</a></li>
+                <li><a href="#" id="logout-link" style="display: none;" onclick="logoutUser()">Logout</a></li>
+            </ul>
+            <figure class="user">
+                <a href="MyProfile.html"><img src="media/hero/login.png" alt="user"></a>
+            </figure>
+        </nav>
+    </header>
+    <!-- navbar -->
+    <section class="movie-detail-container">
+        <div class="movie-detail-wrapper">
+            <div class="movie-info">
+                <p class="year">2022</p>
+                <p class="name">the adam project</p>
+                <p class="genrall"> Sci-fi Adventure </p>
+                <p class="story">
+                    After accidentally crash-landing in 2022, time-traveling fighter <br> pilot Adam Reed teams up with
+                    his
+                    12-year-old self for <br> a mission to save the future.
+                </p>
+                <div class="review-box">
+                    <div class="time">
+                        <i class="icofont-clock-time"></i>
+                        <p>1h46m</p>
+                    </div>
+                    <div class="like">
+                        <i class="icofont-like"></i>
+                        <p>36000</p>
+                    </div>
+                    <div class="dw">
+                        <i class="icofont-download"></i>
+                        <p>15000</p>
+                    </div>
+                </div>
+                <button class="watch"><i class="icofont-ui-play"></i> <span>watch</span></button>
+            </div>
+            <div class="sub-img">
+                <img src="media/hero/subimage/wp10821335.jpg" alt="">
+                <img src="media/hero/subimage/wp10821336.jpg" alt="">
+                <img src="media/hero/subimage/wp10821342.jpg" alt="">
+                <img src="media/hero/subimage/wp10821346.jpg" alt="">
+            </div>
+        </div>
+    </section>
+    <div class="trailer-box">
+        <div class="video-box">
+            <i class="icofont-close-circled close"></i>
+            <div class="video">
+                <video src="media/trailer/The Adam Project - Official Trailer - Netflix_2.mp4" type="video/mp4"></video>
+                <div class="play-icon">
+                    <i class="icofont-ui-play play"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- relate post -->
+    <section class="related">
+        <div class="heading">
+            <h4>related movies</h4>
+        </div>
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="related-card">
+                    <div class="img">
+                        <img src="media/movies/letest/l-13.png" alt="">
+                        <div class="dw-btn ">
+                            <i class="icofont-ui-play"></i>
+                        </div>
+                    </div>
+                    <p class="name">The Adam Project</p>
+                    <p class="genres">Action, Adventure</p>
+                </div>
+
+            </div>
+
+            <div class="swiper-slide">
+                <div class="related-card">
+                    <div class="img">
+                        <img src="media/movies/letest/l-1.png" alt="">
+                        <div class="dw-btn">
+                            <i class="icofont-ui-play"></i>
+                        </div>
+                    </div>
+                    <p class="name">uncharted</p>
+                    <p class="genres">Action, Adventure</p>
+                </div>
+
+            </div>
+            <div class="swiper-slide">
+                <div class="related-card">
+                    <div class="img">
+                        <img src="media/movies/letest/l-4.png" alt="">
+                        <div class="dw-btn">
+                            <i class="icofont-ui-play"></i>
+                        </div>
+                    </div>
+                    <p class="name">blacklight</p>
+                    <p class="genres"> Action, Thriller</p>
+                </div>
+
+            </div>
+            <div class="swiper-slide">
+                <div class="related-card">
+                    <div class="img">
+                        <img src="media/movies/letest/l-12.png" alt="">
+                        <div class="dw-btn">
+                            <i class="icofont-ui-play"></i>
+                        </div>
+                    </div>
+                    <p class="name">wrath of man</p>
+                    <p class="genres">Action,Thriller</p>
+                </div>
+
+            </div>
+            <div class="swiper-slide">
+                <div class="related-card">
+                    <div class="img">
+                        <img src="media/movies/letest/l-10.png" alt="">
+                        <div class="dw-btn">
+                            <i class="icofont-ui-play"></i>
+                        </div>
+                    </div>
+                    <p class="name">the batman</p>
+                    <p class="genres">Action, Adventure</p>
+                </div>
+
+            </div>
+
+
+            <div class="swiper-slide">
+                <div class="related-card">
+                    <div class="img">
+                        <img src="media/movies/letest/l-7.png" alt="nobdy">
+                        <div class="dw-btn">
+                            <i class="icofont-ui-play"></i>
+                        </div>
+                    </div>
+                    <p class="name">The Pirates The Last Royal Treasure</p>
+                    <p class="genres">Action, Adventure</p>
+                </div>
+
+            </div>
+            <div class="swiper-slide">
+                <div class="related-card">
+
+                    <div class="img">
+                        <img src="media/movies/letest/l-5.png" alt="nobdy">
+                        <div class="dw-btn">
+                            <i class="icofont-ui-play"></i>
+                        </div>
+                    </div>
+                    <p class="name">The King’s Man</p>
+                    <p class="genres">Adventure, Comedy</p>
+                </div>
+
+            </div>
+            <div class="swiper-slide">
+                <div class="related-card">
+                    <div class="img">
+                        <img src="media/movies/letest/l-6.png" alt="nobdy">
+                        <div class="dw-btn">
+                            <i class="icofont-ui-play"></i>
+                        </div>
+                    </div>
+                    <p class="name">Fireheart</p>
+                    <p class="genres">Animation, Adventure</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="footer-container">
+        <footer>
+            <a href="index.html">AI Team Movies</a>
+            <p>copyright &copy; 2022 <span> AI Team Movies </span> all rights reserved </p>
+            <div class="social">
+                <i class="icofont-facebook"></i>
+                <i class="icofont-twitter"></i>
+                <i class="icofont-instagram"></i>
+            </div>
+        </footer>
+    </div>
+    <!-- javascript -->
+    <script src="/package/swiper-bundle.min.js"></script>
+    <script>
+        // -----------------nav bar----------------///
+        const ul = document.querySelector("ul");
+        console.log(ul);
+        const li = document.querySelectorAll("li");
+        const toggle = document.querySelector(".toggle");
+        toggle.addEventListener("click", () => {
+            toggle.classList.toggle("active-toggle");
+            ul.classList.toggle("ul-active")
+            li.forEach((item) => {
+                item.classList.toggle("li-active");
+            })
+        })
+        // prelaer//
+        let loader = document.querySelector(".preloader");
+        function preloader() {
+            loader.style.display = "none";
+        }
+        preloader();
+        // comming soon//
+        var swiper = new Swiper(".related", {
+            effect: "coverflow",
+            // spaceBetween:10,
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: "auto",
+            coverflowEffect: {
+                rotate: 0,
+                stretch: 0,
+                depth: 0,
+                modifier: 1,
+                slideShadows: true,
+            },
+            loop: true,
+        });
+        let videoContainer = document.querySelector(".trailer-box")
+        let close = document.querySelector(".close");
+        let watch = document.querySelector(".watch");
+        let play = document.querySelector(".play");
+        let video = document.querySelector("video");
+        watch.addEventListener("click", () => {
+            videoContainer.style.display = "flex";
+            play.addEventListener("click", () => {
+                if (video.paused) {
+                    video.play()
+                    play.classList.remove("icofont-ui-play");
+                    play.classList.add("icofont-ui-pause");
+                } else {
+                    play.classList.add("icofont-ui-play");
+                    play.classList.remove("icofont-ui-pause");
+                    video.pause();
+                }
+            })
+            close.addEventListener("click", () => {
+                videoContainer.style.display = "none";
+
+            })
+        })
+
+        // navbar//
+        window.addEventListener("scroll", () => {
+            if (document.documentElement.scrollTop > 30 || document.body.scrollTop > 30) {
+                console.log("ll")
+                document.querySelector("header").style.background = 'linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8))';
+                document.querySelector("header").style.backdropFilter = "blur(10px)";
+            } else {
+                document.querySelector("header").style.background = "";
+                document.querySelector("header").style.backdropFilter = "blur(0px)";
+            }
+        })
+    </script>
+</body>
+
+</html>
